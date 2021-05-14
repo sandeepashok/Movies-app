@@ -1,0 +1,91 @@
+header {
+    background-color: #08121C;
+    padding: 0.5rem;
+    display: flex;
+    justify-content: space-between;
+}
+
+.searchbar {
+    font-family: inherit;
+    font-size: large;
+    font-weight: bold;
+    border: 2px solid #030D17;
+    border-radius: 50px;
+    padding: 5px;
+    outline: none;
+    background-color: transparent;
+    color: whitesmoke;
+    width: 100%;
+}
+
+.searchbar-container {
+    width: 100%;
+}
+
+.search-form {
+    width: 40%;
+    margin-left: 1.5rem;
+    display: flex;
+    justify-content: center;
+}
+
+.movie-icon {
+    font-size: 2rem !important;
+    cursor: pointer;
+}
+
+.hamburger-icon {
+    font-size: 2.2rem !important;
+    margin: -3px 20px 0 0;
+    padding: 0;
+    cursor: pointer;
+}
+
+.brand-name {
+    display: flex;
+    margin-top: 5px;
+}
+
+.brand {
+    cursor: pointer;
+}
+
+.brandname-and-icon {
+    display: flex;
+    text-decoration: none;
+    color: white;
+}
+
+nav {
+    margin-top: 5px;
+}
+
+.nav-links {
+    text-decoration: none;
+    font-size: large;
+    color: white;
+    margin: 1rem;
+    width: 10%;
+    vertical-align: center;
+}
+
+.active-nav-links {
+    text-decoration: none;
+    font-weight: bold;
+    color: white;
+}
+
+@media only screen and (max-width: 620px) {
+    .searchbar {
+        width: 100%;
+    }
+
+    .search-form {
+        width: 50%;
+    }
+
+    .hamburger-icon {
+        margin: -3px 5px 0 0;
+    }
+
+}

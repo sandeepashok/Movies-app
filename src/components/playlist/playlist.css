@@ -1,0 +1,173 @@
+.remove-from-playlist-btn {
+    font-size: 1.5rem !important;
+    margin-left: 55px;
+    cursor: pointer;
+}
+
+.page-heading {
+    margin-bottom: 5px;
+}
+
+.playlist-container {
+    display: flex;
+    flex-direction: column;
+    margin-top: -10px;
+}
+
+.playlist-card-container {
+    margin: 0;
+}
+
+.playlist-header {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 10px;
+    position: relative;
+}
+
+.playlist-name {
+    text-align: center;
+    position: absolute;
+    top: 0.5rem;
+    left: 1.5rem;
+}
+
+.delete-playlist {
+    padding: 0.5rem;
+    text-align: center;
+    border-radius: 5px;
+    border: none;
+    outline: none;
+    font-weight: bold;
+    font-size: 15px;
+    font-family: inherit;
+    background-color: whitesmoke;
+    text-transform: capitalize;
+    cursor: pointer;
+    position: absolute;
+    top: 1rem;
+    right: 1.5rem;
+}
+
+.delete-playlist:hover {
+    background-color: red;
+    color: white;
+}
+
+.playlist-cards {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    height: max-content;
+    flex-wrap: wrap;
+    margin-top: 2.5rem;
+}
+
+.movie {
+    margin: 2rem auto;
+    margin-bottom: 0;
+    width: 250px;
+    display: flex;
+}
+
+.movie img {
+    max-width: 100%;
+}
+
+.movie-info {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column;
+    padding: 1.5rem;
+    background-color: #ffffff05;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    position: relative;
+    overflow: hidden;
+}
+
+.rating-playlist-section {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.movie-info:hover {
+    box-shadow:
+        0 2.8px 2.2px rgba(0, 0, 0, 0.034),
+        0 6.7px 5.3px rgba(0, 0, 0, 0.048),
+        0 12.5px 10px rgba(0, 0, 0, 0.06),
+        0 22.3px 17.9px rgba(0, 0, 0, 0.072),
+        0 41.8px 33.4px rgba(0, 0, 0, 0.086),
+        0 100px 80px rgba(0, 0, 0, 0.12)
+}
+
+.movie-info:hover .overview {
+    transform: translateX(0);
+}
+
+.bookmark {
+    color: #F5C518;
+    position: absolute;
+    top: 15px;
+    left: 15px;
+    font-size: 3rem !important;
+    cursor: pointer;
+}
+
+
+.movie-info h3 {
+    margin: 1rem 0.5rem;
+    text-align: center;
+    vertical-align: center;
+    height: 11%;
+}
+
+.movie-info span {
+    margin-right: 55px;
+
+}
+
+.overview {
+    height: 255px;
+    overflow: auto;
+    position: absolute;
+    bottom: 0;
+    top: 4rem;
+    right: 0;
+    left: 0;
+    background-color: #030d17f0;
+    border-radius: 5px;
+    color: #fff;
+    text-align: justify;
+    align-items: center;
+    transform: translateX(-100%);
+    transition: transform 0.3s ease-in-out;
+}
+
+.overview h2 {
+    margin: 5px;
+    text-align: center;
+    font-size: x-large;
+}
+
+.overview p {
+    width: 90%;
+    margin: auto;
+    font-size: 14px;
+}
+
+::-webkit-scrollbar {
+    width: 2px;
+}
+
+::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.5);
+}
