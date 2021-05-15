@@ -60,6 +60,7 @@
 
 .movie-info span {
     margin-right: 55px;
+    text-transform: capitalize;
 }
 
 .playlist-btn {
