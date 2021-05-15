@@ -20,8 +20,6 @@
 ### About
 
   This is a movie recommendation app inspired by IMDb. 
-  
-  features: Bookmarks and Playlists
 
 ### Built With
 
