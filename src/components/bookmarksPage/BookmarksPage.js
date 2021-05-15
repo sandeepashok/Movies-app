@@ -1,5 +1,5 @@
 import React from 'react'
-import Bookmarks from '../bookmarks/Bookmarks'
+import Bookmarks from '../Bookmarks/Bookmarks'
 
 const BookmarksPage = ({ bookmarks, image, removeBookmarksHandler, playlists, removeMovieFromplaylist, addMovieToPlaylist, addEmptyPlaylist }) => {
     return (

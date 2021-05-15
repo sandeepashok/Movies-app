@@ -18,7 +18,7 @@ export default function Playlist({ moviesData, image, addBookmarksHandler, bookm
                     return bookmark.id === data.id;
                 })
                 return (
-                    <div className='movie'>
+                    <div className='movie' >
 
                         <div className='movie-info' key={moviesData.id}>
 
@@ -38,7 +38,6 @@ export default function Playlist({ moviesData, image, addBookmarksHandler, bookm
                                 <span>IMDb: &#9733;{data.vote_average}</span>
 
                                 <CgPlayListRemove className='remove-from-playlist-btn' onClick={() => {
-                                    console.log(moviesData.id, data.id)
                                     removeMovieFromplaylist(moviesData.id, data.id)
                                 }} />
 

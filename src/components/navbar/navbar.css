@@ -54,6 +54,7 @@ header {
     display: flex;
     text-decoration: none;
     color: white;
+    margin-left: 5px;
 }
 
 nav {
@@ -86,6 +87,10 @@ nav {
 
     .hamburger-icon {
         margin: -3px 5px 0 0;
+    }
+
+    .nav-links {
+        display: none;
     }
 
 }

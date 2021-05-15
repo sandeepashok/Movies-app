@@ -3,9 +3,9 @@ import TurnedInNotIcon from '@material-ui/icons/TurnedInNot';
 import TurnedInIcon from '@material-ui/icons/TurnedIn';
 import CloseIcon from '@material-ui/icons/Close';
 import QueueIcon from '@material-ui/icons/Queue';
-import './home.css'
+import './movie-list.css'
 
-export default function Home({ data, image, addBookmarksHandler, bookmarks, removeBookmarksHandler, playlists, removeMovieFromplaylist, addMovieToPlaylist, addEmptyPlaylist }) {
+export default function MovieList({ data, image, addBookmarksHandler, bookmarks, removeBookmarksHandler, playlists, removeMovieFromplaylist, addMovieToPlaylist, addEmptyPlaylist }) {
 
     const [isModalVisible, setIsModalVisible] = useState(false)
     const [modalInput, setModalInput] = useState('')

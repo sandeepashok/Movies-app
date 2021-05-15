@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react';
-import Navbar from './components/navbar/Navbar'
-import Homepage from './components/homepage/homepage'
-import BookmarksPage from './components/bookmarksPage/BookmarksPage'
+import Navbar from './components/Navbar/Navbar'
+import Homepage from './components/Homepage/Homepage'
+import BookmarksPage from './components/BookmarksPage/BookmarksPage'
 import PlaylistPage from './components/playlistPage/PlaylistPage'
 import axios from 'axios'
 import { v4 as uuidv4 } from 'uuid';
@@ -146,23 +146,25 @@ export default function App() {
         },
         {
           "adult": false,
-          "backdrop_path": "/5Zv5KmgZzdIvXz2KC3n0MyecSNL.jpg",
+          "backdrop_path": "/7prYzufdIOy1KCTZKVWpjBFqqNr.jpg",
           "genre_ids": [
-            28,
-            53,
-            80
+            16,
+            12,
+            14,
+            10751,
+            28
           ],
-          "id": 634528,
+          "id": 527774,
           "original_language": "en",
-          "original_title": "The Marksman",
-          "overview": "Jim Hanson’s quiet life is suddenly disturbed by two people crossing the US/Mexico border – a woman and her young son – desperate to flee a Mexican cartel. After a shootout leaves the mother dead, Jim becomes the boy’s reluctant defender. He embraces his role as Miguel’s protector and will stop at nothing to get him to safety, as they go on the run from the relentless assassins.",
-          "popularity": 967.189,
-          "poster_path": "/6vcDalR50RWa309vBH1NLmG2rjQ.jpg",
-          "release_date": "2021-01-15",
-          "title": "The Marksman",
+          "original_title": "Raya and the Last Dragon",
+          "overview": "Long ago, in the fantasy world of Kumandra, humans and dragons lived together in harmony. But when an evil force threatened the land, the dragons sacrificed themselves to save humanity. Now, 500 years later, that same evil has returned and it’s up to a lone warrior, Raya, to track down the legendary last dragon to restore the fractured land and its divided people.",
+          "popularity": 595.08,
+          "poster_path": "/lPsD10PP4rgUGiGR4CCXA6iY0QQ.jpg",
+          "release_date": "2021-03-03",
+          "title": "Raya and the Last Dragon",
           "video": false,
-          "vote_average": 7.4,
-          "vote_count": 437
+          "vote_average": 8.2,
+          "vote_count": 2766
         },
         {
           "adult": false,
@@ -212,11 +214,7 @@ export default function App() {
     setBookmarks(filteredBookmarks)
   }
 
-  console.log(playlists)
-
   const removeMovieFromplaylist = (playlistId, movieId) => {
-
-    console.log('playlist id:', playlistId, 'movie id', movieId)
 
     const currentPlaylist = playlists.map(playlist => {
       if (playlistId !== playlist.id) {
@@ -241,12 +239,10 @@ export default function App() {
 
     setPlaylists(currentPlaylist)
 
-    console.log(playlists)
 
   }
 
   const addMovieToPlaylist = (playlistId, movieId) => {
-    console.log('playlist id:', playlistId, 'movie id', movieId)
 
     const currentPlaylist = playlists.map(playlist => {
       if (playlistId !== playlist.id) {
@@ -269,7 +265,6 @@ export default function App() {
     })
     setPlaylists(currentPlaylist)
 
-    console.log(playlists)
   }
 
   const addEmptyPlaylist = (playlistName) => {
@@ -298,7 +293,19 @@ export default function App() {
           setMovies(moviesList.data.results)
         }
       )
+    setBookmarks(JSON.parse(localStorage.getItem('bookmarks')));
+    setPlaylists(JSON.parse(localStorage.getItem('playlists')));
   }, [])
+
+
+
+  useEffect(() => {
+    localStorage.setItem('bookmarks', JSON.stringify(bookmarks))
+  }, [bookmarks])
+
+  useEffect(() => {
+    localStorage.setItem('playlists', JSON.stringify(playlists))
+  }, [playlists])
 
   return (
     <div className="App">

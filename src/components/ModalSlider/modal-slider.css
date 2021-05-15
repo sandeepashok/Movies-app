@@ -1,0 +1,72 @@
+.modal-slider {
+  height: 100vh;
+  width: 300px;
+  background-color: #030d17fe;
+  color: white;
+  position: fixed;
+  z-index: 99;
+  transition: transform 0.3s ease-in-out;
+}
+
+.close-modal-slider {
+  display: none;
+}
+
+.modal-movie-icon {
+  font-size: 2rem !important;
+  cursor: pointer;
+}
+
+.modal-hamburger-icon {
+  font-size: 2.2rem !important;
+  margin: -3px 20px 0 0;
+  padding: 0;
+  cursor: pointer;
+}
+
+.modal-brand-name {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 0.3rem;
+  margin: 0.5rem;
+}
+
+.modal-brand {
+  cursor: pointer;
+}
+
+.modal-brandname-and-icon {
+  display: flex;
+  text-decoration: none;
+  color: white;
+}
+
+.modal-nav {
+  margin-top: 5px;
+}
+
+.modal-nav-links {
+  text-decoration: none;
+  font-size: x-large;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 2rem;
+  border-bottom: 1px solid #d3d3d315;
+  padding: 1rem;
+}
+
+.modal-active-nav-links {
+  text-decoration: none;
+  font-weight: bold;
+  color: white;
+}
+
+@media only screen and (max-width: 620px) {
+  .modal-slider {
+    height: 100vh;
+    width: 100vw;
+  }
+}

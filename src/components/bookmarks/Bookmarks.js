@@ -31,8 +31,7 @@ export default function Bookmarks({ bookmark, image, removeBookmarksHandler, pla
                             {playlists.map(playlist => {
 
                                 const movieExistInPlaylist = playlist.movies.find(movie => {
-                                    console.log(playlist, movie)
-                                    console.log(bookmark.id === movie.id)
+
                                     return movie.id === bookmark.id
                                 })
 
