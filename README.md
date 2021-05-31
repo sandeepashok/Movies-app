@@ -19,7 +19,7 @@
 
 ### About
 
-  This is a movie recommendation app called "Movieeze", This app inspired by IMDb. 
+  This is a movie recommendation app called "Movieeze". This app inspired by IMDb. 
 
 ### Built With
 
